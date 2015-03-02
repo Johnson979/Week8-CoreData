@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qm2-8a-UAu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--My Contacts-->
+        <scene sceneID="dkC-F2-VCT">
+            <objects>
+                <tableViewController id="xmb-zT-Yl9" customClass="ContactTableViewController" customModule="ConactDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1ep-Zi-wlD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="IPP-lA-HyU" detailTextLabel="jN5-bt-8fQ" style="IBUITableViewCellStyleValue1" id="Jan-Dv-KiU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jan-Dv-KiU" id="dSK-XN-MwG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IPP-lA-HyU">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jN5-bt-8fQ">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="WZf-Xy-W4u" kind="presentation" identifier="UpdateContacts" id="f1R-MS-6Ll"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xmb-zT-Yl9" id="3PL-hS-lGG"/>
+                            <outlet property="delegate" destination="xmb-zT-Yl9" id="Ltm-Sz-xBB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Contacts" id="iu2-9W-qSn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AqD-3G-b2s">
+                            <connections>
+                                <segue destination="WZf-Xy-W4u" kind="presentation" id="88r-PK-q5d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVq-Mz-ZWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2434" y="252"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="hOS-k8-GhO">
+            <objects>
+                <viewController id="WZf-Xy-W4u" customClass="ContactViewController" customModule="ConactDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ca7-29-15a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jd0-ja-M2Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="THL-kK-eJH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FullName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFM-Ic-BS8">
+                                <rect key="frame" x="177" y="72" width="263" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="MgR-CH-Qkd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WZf-Xy-W4u" id="WoG-M8-j7k"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-QJ-bhe">
+                                <rect key="frame" x="177" y="110" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WZf-Xy-W4u" id="4xW-tY-MBr"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCt-qb-P0p">
+                                <rect key="frame" x="177" y="148" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snI-ym-yPN">
+                                <rect key="frame" x="177" y="211" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="NFo-u6-dV6"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSave:" destination="WZf-Xy-W4u" eventType="touchUpInside" id="ELw-YY-QCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noG-cW-D2x">
+                                <rect key="frame" x="410" y="211" width="30" height="30"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFind:" destination="WZf-Xy-W4u" eventType="touchUpInside" id="mV7-J3-OnK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYL-ZJ-ifM">
+                                <rect key="frame" x="177" y="148" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WZf-Xy-W4u" id="W4y-p0-dH3"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7U-hm-04c">
+                                <rect key="frame" x="177" y="186" width="263" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DFD-3e-lMe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AE-3Z-rNx">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Contacts" id="4fP-xB-JhU">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; back" id="p61-VW-qX8">
+                                            <connections>
+                                                <action selector="btnBack:" destination="WZf-Xy-W4u" id="ccm-Oc-Ncd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PFM-Ic-BS8" firstAttribute="trailing" secondItem="pzV-QJ-bhe" secondAttribute="trailing" id="5GA-o9-dXP"/>
+                            <constraint firstItem="snI-ym-yPN" firstAttribute="top" secondItem="g7U-hm-04c" secondAttribute="bottom" constant="4" id="8UO-zr-FMG"/>
+                            <constraint firstItem="g7U-hm-04c" firstAttribute="top" secondItem="lYL-ZJ-ifM" secondAttribute="bottom" constant="8" symbolic="YES" id="9iK-AE-IsJ"/>
+                            <constraint firstItem="lYL-ZJ-ifM" firstAttribute="trailing" secondItem="g7U-hm-04c" secondAttribute="trailing" id="G2R-gJ-A7f"/>
+                            <constraint firstItem="lYL-ZJ-ifM" firstAttribute="leading" secondItem="GCt-qb-P0p" secondAttribute="leading" id="JQg-i1-SHL"/>
+                            <constraint firstItem="GCt-qb-P0p" firstAttribute="top" secondItem="pzV-QJ-bhe" secondAttribute="bottom" constant="8" symbolic="YES" id="KUJ-Ea-HMH"/>
+                            <constraint firstItem="noG-cW-D2x" firstAttribute="trailing" secondItem="g7U-hm-04c" secondAttribute="trailing" id="O1W-GH-ZES"/>
+                            <constraint firstItem="5AE-3Z-rNx" firstAttribute="leading" secondItem="THL-kK-eJH" secondAttribute="leading" id="O49-OP-ZbD"/>
+                            <constraint firstItem="pzV-QJ-bhe" firstAttribute="trailing" secondItem="GCt-qb-P0p" secondAttribute="trailing" id="QaV-mD-l0E"/>
+                            <constraint firstItem="lYL-ZJ-ifM" firstAttribute="baseline" secondItem="GCt-qb-P0p" secondAttribute="baseline" id="UdY-zI-pfF"/>
+                            <constraint firstItem="snI-ym-yPN" firstAttribute="leading" secondItem="g7U-hm-04c" secondAttribute="leading" id="aL5-je-hei"/>
+                            <constraint firstItem="PFM-Ic-BS8" firstAttribute="top" secondItem="5AE-3Z-rNx" secondAttribute="bottom" constant="8" id="aoV-vf-Cbr"/>
+                            <constraint firstItem="pzV-QJ-bhe" firstAttribute="top" secondItem="PFM-Ic-BS8" secondAttribute="bottom" constant="8" symbolic="YES" id="dwK-iC-VfL"/>
+                            <constraint firstItem="snI-ym-yPN" firstAttribute="baseline" secondItem="noG-cW-D2x" secondAttribute="baseline" id="f3s-BA-BeA"/>
+                            <constraint firstItem="PFM-Ic-BS8" firstAttribute="leading" secondItem="THL-kK-eJH" secondAttribute="leading" constant="177" id="fYG-nO-koC"/>
+                            <constraint firstItem="GCt-qb-P0p" firstAttribute="trailing" secondItem="lYL-ZJ-ifM" secondAttribute="trailing" id="fwL-Bq-vHb"/>
+                            <constraint firstItem="pzV-QJ-bhe" firstAttribute="leading" secondItem="lYL-ZJ-ifM" secondAttribute="leading" id="gJs-AS-96K"/>
+                            <constraint firstItem="g7U-hm-04c" firstAttribute="leading" secondItem="GCt-qb-P0p" secondAttribute="leading" id="juF-0O-5ho"/>
+                            <constraint firstItem="pzV-QJ-bhe" firstAttribute="leading" secondItem="PFM-Ic-BS8" secondAttribute="leading" id="nbU-Vb-uXO"/>
+                            <constraint firstItem="5AE-3Z-rNx" firstAttribute="top" secondItem="Ca7-29-15a" secondAttribute="bottom" id="sqx-Ue-zke"/>
+                            <constraint firstAttribute="trailing" secondItem="5AE-3Z-rNx" secondAttribute="trailing" id="zJd-O6-SXG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSave" destination="snI-ym-yPN" id="DEO-mr-xAW"/>
+                        <outlet property="email" destination="pzV-QJ-bhe" id="pKk-jr-jNV"/>
+                        <outlet property="fullname" destination="PFM-Ic-BS8" id="O3H-EE-Tnr"/>
+                        <outlet property="phone" destination="lYL-ZJ-ifM" id="hCk-Rj-J8N"/>
+                        <outlet property="status" destination="g7U-hm-04c" id="YBq-p2-DBH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYv-tx-M4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="191"/>
+        </scene>
+        <!--My Contacts-->
+        <scene sceneID="HCA-Bq-SzC">
+            <objects>
+                <navigationController title="My Contacts" automaticallyAdjustsScrollViewInsets="NO" id="qm2-8a-UAu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gi9-FS-lYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xmb-zT-Yl9" kind="relationship" relationship="rootViewController" id="OBk-4L-NdE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjF-PH-Yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="246"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f1R-MS-6Ll"/>
+    </inferredMetricsTieBreakers>
+</document>

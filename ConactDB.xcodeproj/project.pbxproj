@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363D51951A9FA23D00FB3B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D51941A9FA23D00FB3B95 /* AppDelegate.swift */; };
+		363D51981A9FA23D00FB3B95 /* ConactDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 363D51961A9FA23D00FB3B95 /* ConactDB.xcdatamodeld */; };
+		363D519D1A9FA23D00FB3B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363D519B1A9FA23D00FB3B95 /* Main.storyboard */; };
+		363D519F1A9FA23D00FB3B95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363D519E1A9FA23D00FB3B95 /* Images.xcassets */; };
+		363D51A21A9FA23D00FB3B95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363D51A01A9FA23D00FB3B95 /* LaunchScreen.xib */; };
+		363D51AE1A9FA23E00FB3B95 /* ConactDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D51AD1A9FA23E00FB3B95 /* ConactDBTests.swift */; };
+		363D51B81A9FA2AB00FB3B95 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D51B71A9FA2AB00FB3B95 /* ContactTableViewController.swift */; };
+		363D51BA1A9FA2BC00FB3B95 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D51B91A9FA2BC00FB3B95 /* ContactViewController.swift */; };
+		363D51BC1A9FA71C00FB3B95 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D51BB1A9FA71C00FB3B95 /* Contact.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363D51A81A9FA23E00FB3B95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363D51871A9FA23D00FB3B95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363D518E1A9FA23D00FB3B95;
+			remoteInfo = ConactDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		363D518F1A9FA23D00FB3B95 /* ConactDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConactDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		363D51931A9FA23D00FB3B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363D51941A9FA23D00FB3B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		363D51971A9FA23D00FB3B95 /* ConactDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConactDB.xcdatamodel; sourceTree = "<group>"; };
+		363D519C1A9FA23D00FB3B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		363D519E1A9FA23D00FB3B95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		363D51A11A9FA23D00FB3B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		363D51A71A9FA23E00FB3B95 /* ConactDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConactDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		363D51AC1A9FA23E00FB3B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363D51AD1A9FA23E00FB3B95 /* ConactDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConactDBTests.swift; sourceTree = "<group>"; };
+		363D51B71A9FA2AB00FB3B95 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		363D51B91A9FA2BC00FB3B95 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		363D51BB1A9FA71C00FB3B95 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363D518C1A9FA23D00FB3B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363D51A41A9FA23E00FB3B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363D51861A9FA23D00FB3B95 = {
+			isa = PBXGroup;
+			children = (
+				363D51911A9FA23D00FB3B95 /* ConactDB */,
+				363D51AA1A9FA23E00FB3B95 /* ConactDBTests */,
+				363D51901A9FA23D00FB3B95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		363D51901A9FA23D00FB3B95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				363D518F1A9FA23D00FB3B95 /* ConactDB.app */,
+				363D51A71A9FA23E00FB3B95 /* ConactDBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		363D51911A9FA23D00FB3B95 /* ConactDB */ = {
+			isa = PBXGroup;
+			children = (
+				363D51941A9FA23D00FB3B95 /* AppDelegate.swift */,
+				363D519B1A9FA23D00FB3B95 /* Main.storyboard */,
+				363D519E1A9FA23D00FB3B95 /* Images.xcassets */,
+				363D51A01A9FA23D00FB3B95 /* LaunchScreen.xib */,
+				363D51961A9FA23D00FB3B95 /* ConactDB.xcdatamodeld */,
+				363D51BB1A9FA71C00FB3B95 /* Contact.swift */,
+				363D51921A9FA23D00FB3B95 /* Supporting Files */,
+				363D51B71A9FA2AB00FB3B95 /* ContactTableViewController.swift */,
+				363D51B91A9FA2BC00FB3B95 /* ContactViewController.swift */,
+			);
+			path = ConactDB;
+			sourceTree = "<group>";
+		};
+		363D51921A9FA23D00FB3B95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363D51931A9FA23D00FB3B95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		363D51AA1A9FA23E00FB3B95 /* ConactDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				363D51AD1A9FA23E00FB3B95 /* ConactDBTests.swift */,
+				363D51AB1A9FA23E00FB3B95 /* Supporting Files */,
+			);
+			path = ConactDBTests;
+			sourceTree = "<group>";
+		};
+		363D51AB1A9FA23E00FB3B95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363D51AC1A9FA23E00FB3B95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		363D518E1A9FA23D00FB3B95 /* ConactDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363D51B11A9FA23E00FB3B95 /* Build configuration list for PBXNativeTarget "ConactDB" */;
+			buildPhases = (
+				363D518B1A9FA23D00FB3B95 /* Sources */,
+				363D518C1A9FA23D00FB3B95 /* Frameworks */,
+				363D518D1A9FA23D00FB3B95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConactDB;
+			productName = ConactDB;
+			productReference = 363D518F1A9FA23D00FB3B95 /* ConactDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		363D51A61A9FA23E00FB3B95 /* ConactDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363D51B41A9FA23E00FB3B95 /* Build configuration list for PBXNativeTarget "ConactDBTests" */;
+			buildPhases = (
+				363D51A31A9FA23E00FB3B95 /* Sources */,
+				363D51A41A9FA23E00FB3B95 /* Frameworks */,
+				363D51A51A9FA23E00FB3B95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				363D51A91A9FA23E00FB3B95 /* PBXTargetDependency */,
+			);
+			name = ConactDBTests;
+			productName = ConactDBTests;
+			productReference = 363D51A71A9FA23E00FB3B95 /* ConactDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363D51871A9FA23D00FB3B95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rock Valley College";
+				TargetAttributes = {
+					363D518E1A9FA23D00FB3B95 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					363D51A61A9FA23E00FB3B95 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 363D518E1A9FA23D00FB3B95;
+					};
+				};
+			};
+			buildConfigurationList = 363D518A1A9FA23D00FB3B95 /* Build configuration list for PBXProject "ConactDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 363D51861A9FA23D00FB3B95;
+			productRefGroup = 363D51901A9FA23D00FB3B95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363D518E1A9FA23D00FB3B95 /* ConactDB */,
+				363D51A61A9FA23E00FB3B95 /* ConactDBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		363D518D1A9FA23D00FB3B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363D519D1A9FA23D00FB3B95 /* Main.storyboard in Resources */,
+				363D51A21A9FA23D00FB3B95 /* LaunchScreen.xib in Resources */,
+				363D519F1A9FA23D00FB3B95 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363D51A51A9FA23E00FB3B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363D518B1A9FA23D00FB3B95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363D51BC1A9FA71C00FB3B95 /* Contact.swift in Sources */,
+				363D51B81A9FA2AB00FB3B95 /* ContactTableViewController.swift in Sources */,
+				363D51951A9FA23D00FB3B95 /* AppDelegate.swift in Sources */,
+				363D51981A9FA23D00FB3B95 /* ConactDB.xcdatamodeld in Sources */,
+				363D51BA1A9FA2BC00FB3B95 /* ContactViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363D51A31A9FA23E00FB3B95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363D51AE1A9FA23E00FB3B95 /* ConactDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		363D51A91A9FA23E00FB3B95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363D518E1A9FA23D00FB3B95 /* ConactDB */;
+			targetProxy = 363D51A81A9FA23E00FB3B95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		363D519B1A9FA23D00FB3B95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363D519C1A9FA23D00FB3B95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		363D51A01A9FA23D00FB3B95 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363D51A11A9FA23D00FB3B95 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		363D51AF1A9FA23E00FB3B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		363D51B01A9FA23E00FB3B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		363D51B21A9FA23E00FB3B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConactDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		363D51B31A9FA23E00FB3B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConactDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		363D51B51A9FA23E00FB3B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConactDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConactDB.app/ConactDB";
+			};
+			name = Debug;
+		};
+		363D51B61A9FA23E00FB3B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConactDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConactDB.app/ConactDB";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363D518A1A9FA23D00FB3B95 /* Build configuration list for PBXProject "ConactDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363D51AF1A9FA23E00FB3B95 /* Debug */,
+				363D51B01A9FA23E00FB3B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363D51B11A9FA23E00FB3B95 /* Build configuration list for PBXNativeTarget "ConactDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363D51B21A9FA23E00FB3B95 /* Debug */,
+				363D51B31A9FA23E00FB3B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363D51B41A9FA23E00FB3B95 /* Build configuration list for PBXNativeTarget "ConactDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363D51B51A9FA23E00FB3B95 /* Debug */,
+				363D51B61A9FA23E00FB3B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		363D51961A9FA23D00FB3B95 /* ConactDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				363D51971A9FA23D00FB3B95 /* ConactDB.xcdatamodel */,
+			);
+			currentVersion = 363D51971A9FA23D00FB3B95 /* ConactDB.xcdatamodel */;
+			path = ConactDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 363D51871A9FA23D00FB3B95 /* Project object */;
+}
