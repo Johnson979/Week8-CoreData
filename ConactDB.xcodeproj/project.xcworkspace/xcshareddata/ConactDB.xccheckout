@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4AB32FF6-3FFA-4CA2-A831-B50B77010692</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ConactDB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C8CD612EFA0E64DFA48C778CFC3474A652C5C7CE</key>
+		<string>https://github.com/ioscourse/Week8-CoreData.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ConactDB.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C8CD612EFA0E64DFA48C778CFC3474A652C5C7CE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ioscourse/Week8-CoreData.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C8CD612EFA0E64DFA48C778CFC3474A652C5C7CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C8CD612EFA0E64DFA48C778CFC3474A652C5C7CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Week8-CoreData</string>
+		</dict>
+	</array>
+</dict>
+</plist>

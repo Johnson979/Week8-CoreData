@@ -74,7 +74,7 @@ class ContactTableViewController: UITableViewController, UITableViewDelegate {
             as UITableViewCell
         
         let person = contactArray[indexPath.row]
-        cell.textLabel.text = person.valueForKey("fullname") as String?
+        cell.textLabel?.text = person.valueForKey("fullname") as String?
         cell.detailTextLabel?.text = ">>"
         
         return cell
