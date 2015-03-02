@@ -7,19 +7,22 @@
 //
 
 import UIKit
+//0) Add import for CoreData
 import CoreData
 
 class ContactViewController: UIViewController {
     
-    @IBOutlet weak var btnSave: UIButton!
-    
+//1) Add ManagedObject Data Context
     let managedObjectContext =
     (UIApplication.sharedApplication().delegate
         as AppDelegate).managedObjectContext
-    
+//2) Add variable contactdb (used from UITableView
    var contactdb:NSManagedObject!
     
+     @IBOutlet weak var btnSave: UIButton!
+    
     @IBAction func btnBack(sender: UIBarButtonItem) {
+//3) Dismiss ViewController
         self.dismissViewControllerAnimated(false, completion: nil)
     }
 
@@ -33,6 +36,7 @@ class ContactViewController: UIViewController {
     
     
     @IBAction func btnSave(sender: UIButton) {
+//4 Add Save Logic
         if (contactdb != nil)
         {
             
@@ -67,6 +71,7 @@ class ContactViewController: UIViewController {
     }
     
     @IBAction func btnFind(sender: UIButton) {
+//5 Add Find Logic
         let entityDescription =
         NSEntityDescription.entityForName("Contact",
             inManagedObjectContext: managedObjectContext!)
@@ -96,11 +101,13 @@ class ContactViewController: UIViewController {
             }
         }
     }
-    
+//6 Add to hide keyboard
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         //forces resign first responder and hides keyboard
         DismissKeyboard()
     }
+    
+//7 Add to hide keyboard
     func DismissKeyboard(){
         //forces resign first responder and hides keyboard
         fullname.endEditing(true)
@@ -108,12 +115,15 @@ class ContactViewController: UIViewController {
          phone.endEditing(true)
         
     }
+//8 Add to hide keyboard
     func textFieldShouldReturn(textField: UITextField!) -> Bool     {
         textField.resignFirstResponder()
         return true;
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//9 Add logic to load db. If contactdb has content that means a row was tapped on UiTableView
      if (contactdb != nil)
      {
         fullname.text = contactdb.valueForKey("fullname") as String
